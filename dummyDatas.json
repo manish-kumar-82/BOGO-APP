@@ -1,0 +1,124 @@
+{
+    "discounts": [
+      {
+        "name": "Summer Sale - 20% Off",
+        "buyX": {
+          "products": ["Leather Wallet", "Tshirt for men", "Jeans for men"],
+          "collections": ["Summer Collection"],
+          "minQty": 2
+        },
+        "getY": {
+          "products": ["Tshirt for men"],
+          "discountType": "percentage",
+          "discountValue": 20,
+          "quantity": 1,
+          "autoAdd": true
+        },
+        "active": true,
+        "startDate": "2025-06-01T00:00:00.000Z",
+        "endDate": "2025-06-30T23:59:59.000Z",
+        "usageLimit": 1000,
+        "perCustomerLimit": 3,
+        "combinationRules": {
+          "allowProductDiscounts": true,
+          "allowOrderDiscounts": false,
+          "allowShippingDiscounts": false
+        }
+      },
+      {
+        "name": "Buy 2 Get 1 Free on Accessories",
+        "buyX": {
+          "products": ["Leather Wallet", "Jeans for men"],
+          "collections": ["Accessories"],
+          "minQty": 2
+        },
+        "getY": {
+          "products": ["Leather Wallet"],
+          "discountType": "percentage",
+          "discountValue": 100,
+          "quantity": 1,
+          "autoAdd": true
+        },
+        "active": true,
+        "startDate": "2025-07-01T00:00:00.000Z",
+        "endDate": "2025-07-31T23:59:59.000Z",
+        "usageLimit": 500,
+        "perCustomerLimit": 1,
+        "combinationRules": {
+          "allowProductDiscounts": true,
+          "allowOrderDiscounts": false,
+          "allowShippingDiscounts": true
+        }
+      },
+      {
+        "name": "Flat $10 Off on All Products",
+        "buyX": {
+          "products": ["Leather Wallet", "Tshirt for men", "Jeans for men"],
+          "collections": ["All Products"],
+          "minQty": 1
+        },
+        "getY": {
+          "products": ["All Products"],
+          "discountType": "fixed_amount",
+          "discountValue": 10,
+          "quantity": 1,
+          "autoAdd": false
+        },
+        "active": true,
+        "startDate": "2025-08-01T00:00:00.000Z",
+        "endDate": "2025-08-15T23:59:59.000Z",
+        "usageLimit": 2000,
+        "perCustomerLimit": 5,
+        "combinationRules": {
+          "allowProductDiscounts": false,
+          "allowOrderDiscounts": true,
+          "allowShippingDiscounts": false
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "Leather Wallet",
+        "description": "A premium leather wallet with multiple compartments.",
+        "price": 59.99,
+        "category": "Accessories",
+        "stock": 25
+      },
+      {
+        "name": "Tshirt for Men",
+        "description": "A premium leather paint tshirt.",
+        "price": 19.99,
+        "category": "Apparel",
+        "stock": 40
+      },
+      {
+        "name": "Jeans for Men",
+        "description": "A premium pair of jeans made for comfort.",
+        "price": 49.99,
+        "category": "Apparel",
+        "stock": 30
+      },
+      {
+        "name": "Sunglasses",
+        "description": "Stylish sunglasses with UV protection.",
+        "price": 29.99,
+        "category": "Accessories",
+        "stock": 50
+      },
+      {
+        "name": "Winter Jacket",
+        "description": "A warm, cozy jacket perfect for cold weather.",
+        "price": 89.99,
+        "category": "Outerwear",
+        "stock": 15
+      },
+      {
+        "name": "Running Shoes",
+        "description": "Comfortable running shoes for all sports enthusiasts.",
+        "price": 69.99,
+        "category": "Footwear",
+        "stock": 25
+      }
+    ]
+  }
+  
